@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Rectangle 8 Background Removed.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Rectangle 8@2x Background Removed.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Rectangle 8@3x Background Removed.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

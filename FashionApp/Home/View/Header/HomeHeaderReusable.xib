@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="HomeHeaderReusable" customModule="FashionApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="659" height="306"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Krd-Hi-rTv">
+                    <rect key="frame" x="0.0" y="59" width="659" height="213"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catagory" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXb-fz-6rb">
+                            <rect key="frame" x="0.0" y="97" width="572.66666666666663" height="19.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" name="#272727"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yr-hx-M5w">
+                            <rect key="frame" x="582.66666666666663" y="87.333333333333343" width="76.333333333333371" height="38.333333333333343"/>
+                            <color key="tintColor" red="0.5151939944970152" green="0.39121027945341408" blue="0.86572007275132279" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="See All"/>
+                            <connections>
+                                <action selector="seeBtnCliked:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="Cby-QA-afx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="Krd-Hi-rTv" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" id="Gmv-0Y-ffL"/>
+                <constraint firstItem="Krd-Hi-rTv" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="I9j-6A-qkn"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="Krd-Hi-rTv" secondAttribute="bottom" id="Xa9-4c-VkG"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="Krd-Hi-rTv" secondAttribute="trailing" id="Zze-RK-PGx"/>
+            </constraints>
+            <connections>
+                <outlet property="homeSectionHeaderLabel" destination="NXb-fz-6rb" id="aBt-lo-gf8"/>
+                <outlet property="homeSeeAllButton" destination="8Yr-hx-M5w" id="2tN-v8-Mq2"/>
+            </connections>
+            <point key="canvasLocation" x="298.47328244274809" y="-91.549295774647888"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <namedColor name="#272727">
+            <color red="0.15299999713897705" green="0.15299999713897705" blue="0.15299999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
